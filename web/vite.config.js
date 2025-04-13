@@ -52,7 +52,7 @@ export default defineConfig({
     },
   },
   server: {
-    host: '0.0.0.0',
+    host: 'http://120.24.177.114',
     proxy: {
       '/api': {
         target: 'http://120.24.177.114:3000',
