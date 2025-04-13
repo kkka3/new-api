@@ -52,14 +52,14 @@ export default defineConfig({
     },
   },
   server: {
-    host: 'http://120.24.177.114',
+    host: 'https://120.24.177.114',
     proxy: {
       '/api': {
-        target: 'http://120.24.177.114:3000',
+        target: 'https://120.24.177.114:3000',
         changeOrigin: true,
       },
       '/pg': {
-        target: 'http://120.24.177.114:3000',
+        target: 'https://120.24.177.114:3000',
         changeOrigin: true,
       },
     },
