@@ -11,9 +11,7 @@ export let API = axios.create({
 
 export function updateAPI() {
   API = axios.create({
-    baseURL: import.meta.env.VITE_REACT_APP_SERVER_URL
-      ? import.meta.env.VITE_REACT_APP_SERVER_URL
-      : '',
+    baseURL: "https://120.24.177.114",
     headers: {
       'New-API-User': getUserIdFromLocalStorage(),
       'Cache-Control': 'no-store'
