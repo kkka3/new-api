@@ -2,7 +2,7 @@ import { getUserIdFromLocalStorage, showError } from './utils';
 import axios from 'axios';
 
 export let API = axios.create({
-  baseURL: "http://120.24.177.114",
+  baseURL: "https://120.24.177.114",
   headers: {
     'New-API-User': getUserIdFromLocalStorage(),
     'Cache-Control': 'no-store'
