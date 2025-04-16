@@ -2,7 +2,7 @@ import { getUserIdFromLocalStorage, showError } from './utils';
 import axios from 'axios';
 
 export let API = axios.create({
-  baseURL: "https://api-kk.shop",
+  baseURL: "https://api-kk.shop:3000",
   headers: {
     'New-API-User': getUserIdFromLocalStorage(),
     'Cache-Control': 'no-store'
@@ -11,7 +11,7 @@ export let API = axios.create({
 
 export function updateAPI() {
   API = axios.create({
-    baseURL: "https://api-kk.shop",
+    baseURL: "https://api-kk.shop:3000",
     headers: {
       'New-API-User': getUserIdFromLocalStorage(),
       'Cache-Control': 'no-store'
