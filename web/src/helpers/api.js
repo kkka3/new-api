@@ -11,7 +11,7 @@ export let API = axios.create({
 
 export function updateAPI() {
   API = axios.create({
-    baseURL: "https://120.24.177.114",
+    baseURL: "https://api-kk.shop",
     headers: {
       'New-API-User': getUserIdFromLocalStorage(),
       'Cache-Control': 'no-store'
